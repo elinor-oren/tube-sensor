@@ -4,11 +4,19 @@
 float dbValue;             //declares the variable globally
 String noiseLevel;
 
+
 //LED Strip needs
 #include <Adafruit_NeoPixel.h> 
-#define NUMPIXELS    8    
-#define PIN 6
-Adafruit_NeoPixel pixels(NUMPIXELS, PIN); //I don't understand this line
+#define LED_COUNT    8    
+#define LED_PIN 6
+Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);
+// Argument 1 = Number of pixels in NeoPixel strip
+// Argument 2 = Arduino pin number (most are valid)
+// Argument 3 = Pixel type flags, add together as needed:
+uint32_t red = strip.Color(75, 0, 0);//red
+uint32_t yellow = strip.Color(75, 75, 0);//yellow
+uint32_t green = strip.Color(0, 75, 0);//green
+
 
 
 //LCD Screen needs
@@ -18,12 +26,12 @@ DFRobot_RGBLCD1602 lcd(/*RGBAddr*/0x60 ,/*lcdCols*/16,/*lcdRows*/2);  //16 chara
 
 void setup() {
   Serial.begin(9600);
-  pixels.begin();
+  strip.begin();
   lcd.init(); //initialize the LCD
 }
 
 void loop() {
-pixels.clear(); //clears light at first
+strip.clear(); //clears light at first
 
 //reads the decibel value
   float voltageValue;
@@ -47,23 +55,23 @@ pixels.clear(); //clears light at first
 }
 
 void setLED() {
-    pixels.clear();
+    strip.clear();
     if (dbValue > 100) {
-     pixels.setPixelColor(0, 75, 0, 0);//red
-     pixels.show();
+     strip.fill(red, 0, 8);
+     strip.show();
     noiseLevel = "Dangerous";
     Serial.println(noiseLevel);
 
   } else if (dbValue < 100 && dbValue > 70) {
-     pixels.setPixelColor(0, 75, 75, 0);//yellow
-     pixels.show();
+    strip.fill(yellow, 0, 8);
+     strip.show();
     noiseLevel = "Hazardous ";
     Serial.println(noiseLevel);
 
 
   } else if (dbValue < 70 && dbValue > 0) {
-     pixels.setPixelColor(0, 0, 75, 0);//green
-     pixels.show();
+        strip.fill(green, 0, 8);
+     strip.show();
     noiseLevel = "Acceptable";
     Serial.println(noiseLevel);
 
