@@ -27,11 +27,12 @@ The following connections were used for each component:
 <img height="399" alt="breadboard_circuit" src="https://github.com/elinor-oren/tube-sensor/assets/127933946/ef5e5c21-7ccf-4866-bd77-3cf7ae2c7d09">
 
 ### Testing
-In the final code, the light and display components depend on the sound sensor’s data readings to properly display, so it is essential to confirm that each work individually first. Start with the sound sensor component. 
+In the final code, the LED and LCD display components depend on the sound sensor’s data readings as an input to properly display, so it is essential to confirm that each work component individually first, starting with the sound sensor component. 
 
 ### :sound: Sound Level Meter 
-1. The Sound Level Meter is almost ready to go out of the packaging, and you can use the circuit diagram above and test script to get the device running with your Arduino. Be sure to view the Serial Monitor to confirm that your data is being output.
+1. The Sound Level Meter is almost ready to go out of the packaging, and you can use the circuit diagram above and test script to get the device running with your Arduino. Be sure to view the Serial Monitor to confirm that your data is being output. 
 
+<img width="430" alt="image" src="https://github.com/elinor-oren/tube-sensor/assets/127933946/dac9d925-01a8-4aeb-a4f6-543da63ac2e8">
 
 
 ### 🔦 LED
@@ -46,6 +47,9 @@ In the final code, the light and display components depend on the sound sensor�
 
 ### 📋 LCD Display
 3. Use a simple "Hello World" sketch to ensure your LCD is connected properly.
+The LCD displays the noiseLevel variable output by the LED and the dbValue variable output by the Sound Level Meter.
+   <img width="377" alt="image" src="https://github.com/elinor-oren/tube-sensor/assets/127933946/ec1635f0-006b-4405-842f-3fa00c6cc359">
+
 
 ### Final Display
 A completely working "Paddingtone" should look like this.
