@@ -19,9 +19,9 @@ The decibel sensor, LCD Display, and Neopixel LED strip require a 5V circuit to 
 
 The following connections were used for each component:
 
-* DFRobot Gravity Sound Level meter - connected to Analog pin A0 for the dataout Arduino signal. 
+* DFRobot Gravity Sound Level meter - connected to Analog pin A0. 
 * Waveshare LCD1602 - the LCD1602 uses the I2C communication protocol, which simply means connecting to the SDA (or A4) pin and SCL (or A5) pin on the Arduino Uno.
-* Neopixel 8 - connected to digital pin 6 for the dataout Arduino signal.
+* Neopixel 8 - connected to digital pin 6 for the datain Arduino signal.
 * 
 <img width="405" alt="schematic_circuit" src="https://github.com/elinor-oren/tube-sensor/assets/127933946/bb6f9408-84ac-45bb-adb6-183870be81d6">
 <img height="399" alt="breadboard_circuit" src="https://github.com/elinor-oren/tube-sensor/assets/127933946/ef5e5c21-7ccf-4866-bd77-3cf7ae2c7d09">
