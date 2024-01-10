@@ -113,8 +113,6 @@ void loop() {
 }
 ```
 
-
-
 The setLED() function sets all LEDS to a predetermined color...
    
    <img width="430" alt="image" src="https://github.com/elinor-oren/tube-sensor/assets/127933946/787dc7fd-813a-4c0c-87f0-2e9de69160bd">
@@ -127,11 +125,38 @@ The setLED() function sets all LEDS to a predetermined color...
 ### 📋 3. LCD Display
 - [ ] install the `DFRobot_RGBLCD1602.h` library.
 - [ ] Use a simple "Hello World" sketch to ensure your LCD is connected properly. 
-```
 
 ```
+#include "DFRobot_RGBLCD1602.h"
 
-The LCD displays the noiseLevel variable output by the LED and the dbValue variable output by the Sound Level Meter.
+const int colorR = 255;
+const int colorG = 0;
+const int colorB = 0;
+
+DFRobot_RGBLCD1602 lcd(/*RGBAddr*/0x60 ,/*lcdCols*/16,/*lcdRows*/2);  //16 characters and 2 lines of show
+
+void setup() {
+    /**
+     *  @brief initialize the LCD and master IIC
+     */ 
+    lcd.init();
+    
+    lcd.setRGB(colorR, colorG, colorB);
+    
+    // Print a message to the LCD.
+    lcd.print("hello, world!");
+
+    delay(1000);
+}
+
+void loop() {
+    lcd.setCursor(0, 1);
+    // print the number of seconds since reset:
+    lcd.print(millis()/1000);
+    delay(100);
+}
+```
+In the final code the LCD displays the noiseLevel variable output by the LED and the dbValue variable output by the Sound Level Meter.
 
    <img width="377" alt="image" src="https://github.com/elinor-oren/tube-sensor/assets/127933946/ec1635f0-006b-4405-842f-3fa00c6cc359">
 
