@@ -48,6 +48,7 @@ In the final code, the LED and LCD display components depend on the sound sensor
 ### 📋 LCD Display
 3. Use a simple "Hello World" sketch to ensure your LCD is connected properly.
 The LCD displays the noiseLevel variable output by the LED and the dbValue variable output by the Sound Level Meter.
+
    <img width="377" alt="image" src="https://github.com/elinor-oren/tube-sensor/assets/127933946/ec1635f0-006b-4405-842f-3fa00c6cc359">
 
 
@@ -61,7 +62,7 @@ The LED brightness has been turned down to avoid glare when using the device in 
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 ## :small_orange_diamond: Assembling the Encasement
-
+The encasement files are available in this repo. 
 The device is designed so that the sound sensor's microphone has protected yet visually disreet access to the ambient environment through a hole in the "o." 
 
 <img width="400" alt="image" src="https://github.com/elinor-oren/tube-sensor/assets/127933946/95765174-3a6e-4fd1-a442-ebf8e5944d15">
