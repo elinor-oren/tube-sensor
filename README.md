@@ -21,7 +21,7 @@ The following connections were used for each component:
 
 * DFRobot Gravity Sound Level meter - connected to Analog pin A0, GND, VCC.
 * Waveshare LCD1602 - this LCD1602 requires much fewer connections than most LCDs and uses the I2C communication protocol, which simply means connecting the corresponding pins to the SDA (or A4) pin and SCL (or A5) pin on the Arduino Uno. connected to GND, VCC as well. 
-* Neopixel 8 - connected to digital pin 6 for the datain Arduino signal, GND, VCC.
+* Neopixel 8 - connected to digital pin 6 for the DIN Arduino signal, GND, VCC. (Be sure that you're not connected to DO or data_out.)
   
 <img width="405" alt="schematic_circuit" src="https://github.com/elinor-oren/tube-sensor/assets/127933946/bb6f9408-84ac-45bb-adb6-183870be81d6">
 <img height="399" alt="breadboard_circuit" src="https://github.com/elinor-oren/tube-sensor/assets/127933946/ef5e5c21-7ccf-4866-bd77-3cf7ae2c7d09">
@@ -71,13 +71,50 @@ void loop()
 - [ ] Be sure to view the Serial Monitor to confirm that your data is being output.
 <img width="400" alt="image" src="https://github.com/elinor-oren/tube-sensor/assets/127933946/b6079d93-9099-4f8c-90e2-32efc867c583">
 
-The final code uses the same set-up.
+>source: [Gravity Analog Sound Level Meter Wiki](https://wiki.dfrobot.com/Gravity__Analog_Sound_Level_Meter_SKU_SEN0232)
+
+The final code uses the same set-up as the sample code.
 
 <img width="430" alt="image" src="https://github.com/elinor-oren/tube-sensor/assets/127933946/dac9d925-01a8-4aeb-a4f6-543da63ac2e8">
 
 
 ### 🔦 2. LED
-The example sketches Neopixel 8 allow you to test as you go. The Neopixel is an 8-LED strip. The setLED() function sets all LEDS to a predetermined color...
+The Neopixel is an 8-LED RGB strip and is very bright at high settings. The example sketches Neopixel 8 allow you to test as you go. 
+- [ ] install the `<Adafruit_NeoPixel.h>` library.
+
+- [ ] Use this example sketch to test the LED
+```
+#include <Adafruit_NeoPixel.h>
+  #include <avr/power.h>
+#define PIN        6
+#define NUMPIXELS 8
+
+Adafruit_NeoPixel pixels(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
+#define DELAYVAL 500
+
+void setup() {
+#if defined(__AVR_ATtiny85__) && (F_CPU == 16000000)
+  clock_prescale_set(clock_div_1);
+#endif
+
+  pixels.begin();
+}
+
+void loop() {
+  pixels.clear();
+
+  for(int i=0; i<NUMPIXELS; i++) {
+
+    pixels.setPixelColor(i, pixels.Color(0, 150, 0));
+    pixels.show();
+    delay(DELAYVAL);
+  }
+}
+```
+
+
+
+The setLED() function sets all LEDS to a predetermined color...
    
    <img width="430" alt="image" src="https://github.com/elinor-oren/tube-sensor/assets/127933946/787dc7fd-813a-4c0c-87f0-2e9de69160bd">
 
@@ -87,8 +124,11 @@ The example sketches Neopixel 8 allow you to test as you go. The Neopixel is an 
 
 
 ### 📋 3. LCD Display
+- [ ] install the `DFRobot_RGBLCD1602.h` library.
 - [ ] Use a simple "Hello World" sketch to ensure your LCD is connected properly. 
+```
 
+```
 
 The LCD displays the noiseLevel variable output by the LED and the dbValue variable output by the Sound Level Meter.
 
