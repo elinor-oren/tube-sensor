@@ -1,7 +1,8 @@
 # The Paddingtone
-This repository is for an environmental noise sensor project for the CASA0016 course.
+This repository is for an environmental noise sensor project for the CASA0016 course. 
 
 ## About
+The Paddingtone is a handheld noise monitoring device designed for deployment within the London Underground, stylized in the iconic Underground roundel design. This device is powered by an external battery pack and is easy to transport on the tube, allowing for unobtrusive data collection across Underground lines and stations. The Paddingtone provides a real-time safety evaluation of ambient noise levels in order to 1. facilitate the collection of noise exposure patterns on the Underground, and 2. illuminate the unsafe acoustic conditions for commuters. Offering a tangible and visually appealing solution, this project seeks to contribute to the broader discourse on environmental determinants of well-being and foster a healthier public transportation experience.
 
 <img width="400" alt="device_function" src="https://github.com/elinor-oren/tube-sensor/assets/127933946/d5e33c2f-cd8e-40f3-9000-948f051e982b">
 
