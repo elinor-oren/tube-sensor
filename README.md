@@ -28,12 +28,21 @@ The following connections were used for each component:
 
 ### Testing
 In the final code, the light and display components depend on the sound sensor’s data readings to properly display, so it is essential to confirm that each work individually first. Start with the sound sensor component. 
+
+### :sound: Sound Level Meter 
 1. The Sound Level Meter is almost ready to go out of the packaging, and you can use the circuit diagram above and test script to get the device running with your Arduino. Be sure to view the Serial Monitor to confirm that your data is being output. 
 
+### 🔦 LED
+2. The example sketches Neopixel 8 allow you to test as you go. The Neopixel is an 8-LED strip. The setLED() function sets all LEDS to a predetermined color...
+   <img width="430" alt="image" src="https://github.com/elinor-oren/tube-sensor/assets/127933946/787dc7fd-813a-4c0c-87f0-2e9de69160bd">
 
-2. The example sketches Neopixel 8 allow you to test as you go.
+   depending on the decibel level.
+
+   <img width="314" alt="image" src="https://github.com/elinor-oren/tube-sensor/assets/127933946/4c242c73-6aa3-4792-b0e4-c35168c03811">
 
 
+
+### 📋 LCD Display
 3. Use a simple "Hello World" sketch to ensure your LCD is connected properly.
 
 
@@ -55,10 +64,14 @@ The device is designed so that the sound sensor's microphone has protected yet v
 The initial test face was a scaled up version of a [Prusamaker Underground Keychain](https://www.printables.com/en/model/39900-london-underground-sign-keyring). I printed this as a first iteration to mark the proper dimensions and then modeled the Paddingtone face.
 
 ![IMG_3649 2](https://github.com/elinor-oren/tube-sensor/assets/127933946/3bbb8d39-429e-4e87-af4b-1104c1629d34)
-![IMG_3646 2](https://github.com/elinor-oren/tube-sensor/assets/127933946/c2a4f05e-eceb-4269-b303-99ef41e70065)
+<img width="705" alt="image" src="https://github.com/elinor-oren/tube-sensor/assets/127933946/bf656c7d-037c-4cbe-9b35-22c394278e9d">
+
 
 ### Modifications 
 If you would like to change the name of the device, be sure to account for this. The London Underground font used is [P22 Johnson](https://fontsgeek.com/fonts/P22-Johnston-Underground-Regular) and can be easily imported to Fusion 360. 
 
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+## :small_orange_diamond: Deploying The Paddingtone
+
