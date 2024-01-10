@@ -1,10 +1,11 @@
 # The Paddingtone
-This repository is for an environmental noise sensor project for the CASA0016 course. 
-
 ## About
-The Paddingtone is a handheld noise monitoring device designed for deployment within the London Underground, stylized in the iconic Underground roundel design. This device is powered by an external battery pack and is easy to transport on the tube, allowing for unobtrusive data collection across Underground lines and stations. The Paddingtone provides a real-time safety evaluation of ambient noise levels in order to 1. facilitate the collection of noise exposure patterns on the Underground, and 2. illuminate the unsafe acoustic conditions for commuters. Offering a tangible and visually appealing solution, this project seeks to contribute to the broader discourse on environmental determinants of well-being and foster a healthier public transportation experience.
+The Paddingtone is a handheld noise monitoring device designed for deployment within the London Underground, stylized in the iconic Underground roundel design. The device is powered by an external battery pack and is easy to transport on the tube, allowing for unobtrusive data collection across Underground lines and stations. The Paddingtone harnesses a Sound Level Meter to collect real-time noise exposure data and provides a safety evaluation of ambient noise levels. This is then visually communicated via an LCD screen and a colour-coded NeoPixel LED array.
 
-<img width="400" alt="device_function" src="https://github.com/elinor-oren/tube-sensor/assets/127933946/d5e33c2f-cd8e-40f3-9000-948f051e982b">
+https://github.com/elinor-oren/tube-sensor/assets/127933946/9f28a4b6-523c-4c38-82ec-e9a6560cfd23
+
+
+Together, these components facilitate the collection of environmenal exposure data on the Underground and illuminate the unsafe acoustic conditions for London Undergound commuters. Offering a tangible and visually appealing solution, this project seeks to contribute to the broader discourse on environmental determinants of well-being and foster a healthier public transportation experience.
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
@@ -164,4 +165,6 @@ If you would like to change the name of the device, be sure to account for this.
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 ## :small_orange_diamond: Deploying The Paddingtone
+### Data Visualization 
+<img width="400" alt="device_function" src="https://github.com/elinor-oren/tube-sensor/assets/127933946/d5e33c2f-cd8e-40f3-9000-948f051e982b">
 
