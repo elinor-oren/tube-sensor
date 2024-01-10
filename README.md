@@ -30,7 +30,9 @@ The following connections were used for each component:
 In the final code, the light and display components depend on the sound sensor’s data readings to properly display, so it is essential to confirm that each work individually first. Start with the sound sensor component. 
 
 ### :sound: Sound Level Meter 
-1. The Sound Level Meter is almost ready to go out of the packaging, and you can use the circuit diagram above and test script to get the device running with your Arduino. Be sure to view the Serial Monitor to confirm that your data is being output. 
+1. The Sound Level Meter is almost ready to go out of the packaging, and you can use the circuit diagram above and test script to get the device running with your Arduino. Be sure to view the Serial Monitor to confirm that your data is being output.
+
+
 
 ### 🔦 LED
 2. The example sketches Neopixel 8 allow you to test as you go. The Neopixel is an 8-LED strip. The setLED() function sets all LEDS to a predetermined color...
@@ -40,7 +42,6 @@ In the final code, the light and display components depend on the sound sensor�
    depending on the decibel level.
 
    <img width="314" alt="image" src="https://github.com/elinor-oren/tube-sensor/assets/127933946/4c242c73-6aa3-4792-b0e4-c35168c03811">
-
 
 
 ### 📋 LCD Display
@@ -64,8 +65,8 @@ The device is designed so that the sound sensor's microphone has protected yet v
 ### Prototyping the Encasement
 The initial test face was a scaled up version of a [Prusamaker Underground Keychain](https://www.printables.com/en/model/39900-london-underground-sign-keyring). I printed this as a first iteration to mark the proper dimensions and then modeled the Paddingtone face.
 
-![IMG_3649 2](https://github.com/elinor-oren/tube-sensor/assets/127933946/3bbb8d39-429e-4e87-af4b-1104c1629d34)
-<img width="705" alt="image" src="https://github.com/elinor-oren/tube-sensor/assets/127933946/bf656c7d-037c-4cbe-9b35-22c394278e9d">
+<img width="400" alt="image" src="https://github.com/elinor-oren/tube-sensor/assets/127933946/0b376bbd-86fb-4b02-8ba1-cef8d55f136e">
+<img width="400" alt="image" src="https://github.com/elinor-oren/tube-sensor/assets/127933946/bf656c7d-037c-4cbe-9b35-22c394278e9d">
 
 
 ### Modifications 
