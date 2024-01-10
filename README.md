@@ -34,6 +34,7 @@ In the final code, the light and display components depend on the sound sensorâ€
 
 ### ðŸ”¦ LED
 2. The example sketches Neopixel 8 allow you to test as you go. The Neopixel is an 8-LED strip. The setLED() function sets all LEDS to a predetermined color...
+   
    <img width="430" alt="image" src="https://github.com/elinor-oren/tube-sensor/assets/127933946/787dc7fd-813a-4c0c-87f0-2e9de69160bd">
 
    depending on the decibel level.
@@ -45,7 +46,7 @@ In the final code, the light and display components depend on the sound sensorâ€
 ### ðŸ“‹ LCD Display
 3. Use a simple "Hello World" sketch to ensure your LCD is connected properly.
 
-
+### Final Display
 A completely working "Paddingtone" should look like this.
 
 ![IMG_3672](https://github.com/elinor-oren/tube-sensor/assets/127933946/5a70f176-59bc-41d9-9cdd-3a1d11cc0e39)
