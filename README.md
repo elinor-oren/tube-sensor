@@ -32,7 +32,7 @@ In the final code, the LED and LCD display components depend on the sound sensor
 
 ### :sound: 1. Sound Level Meter 
 The Sound Level Meter is almost ready to go out of the packaging.
-- [ ] Use the circuit diagram above and the following test script to get the sound meter running with your Arduino.
+- [ ] Use the circuit diagram above and the test script below to get the sound meter running with your Arduino.
 
 ```
 /***************************************************
@@ -81,9 +81,9 @@ The final code uses the same set-up as the sample code.
 
 ### 🔦 2. LED
 The Neopixel is an 8-LED RGB strip and is very bright at high settings. The example sketches Neopixel 8 allow you to test as you go. 
-- [ ] install the `<Adafruit_NeoPixel.h>` library.
+- [ ] install the `<Adafruit_NeoPixel.h>` library [here](https://github.com/adafruit/Adafruit_NeoPixel).
 
-- [ ] Use this example sketch to test the LED
+- [ ] Use the example sketch below to test the LED
 ```
 #include <Adafruit_NeoPixel.h>
   #include <avr/power.h>
@@ -113,7 +113,7 @@ void loop() {
 }
 ```
 
-The setLED() function sets all LEDS to a predetermined color...
+The `setLED()` function sets all LEDS to a predetermined color...
    
    <img width="430" alt="image" src="https://github.com/elinor-oren/tube-sensor/assets/127933946/787dc7fd-813a-4c0c-87f0-2e9de69160bd">
 
@@ -123,8 +123,8 @@ The setLED() function sets all LEDS to a predetermined color...
 
 
 ### 📋 3. LCD Display
-- [ ] install the `DFRobot_RGBLCD1602.h` library.
-- [ ] Use a simple "Hello World" sketch to ensure your LCD is connected properly. 
+- [ ] install the `DFRobot_RGBLCD1602.h` library [here](https://github.com/dfrobot/DFRobot_RGBLCD1602/tree/master).
+- [ ] Use the simple "Hello World" sketch below to ensure your LCD is connected properly. 
 
 ```
 #include "DFRobot_RGBLCD1602.h"
@@ -156,7 +156,7 @@ void loop() {
     delay(100);
 }
 ```
-In the final code the LCD displays the noiseLevel variable output by the LED and the dbValue variable output by the Sound Level Meter.
+In the final code, the LCD displays the `noiseLevel` variable output from the LED and the `dbValue` variable output from the Sound Level Meter.
 
    <img width="377" alt="image" src="https://github.com/elinor-oren/tube-sensor/assets/127933946/ec1635f0-006b-4405-842f-3fa00c6cc359">
 
