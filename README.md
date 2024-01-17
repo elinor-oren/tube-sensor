@@ -27,6 +27,10 @@ The following connections were used for each component:
 <img width="405" alt="schematic_circuit" src="https://github.com/elinor-oren/tube-sensor/assets/127933946/bb6f9408-84ac-45bb-adb6-183870be81d6">
 <img height="399" alt="breadboard_circuit" src="https://github.com/elinor-oren/tube-sensor/assets/127933946/ef5e5c21-7ccf-4866-bd77-3cf7ae2c7d09">
 
+I recreated the above circuit on a PCB and soldered the wires in place. I’ve used a copper PCB to stand in as a lighter version of the breadboard to ensure comfort when transporting the Paddingtone device. I laid out my parts and attached additional f/m cables between components and the board to be sure I’d have enough slack to fit everything in the encasement. 
+
+The device has a power consumption of 0.10-0.13A, which means using a portable battery with 5000mAH should allow you to power the device for ~50 hours. 
+
 ### Testing
 In the final code, the LED and LCD display components depend on the sound sensor’s data readings as an input. It is essential to confirm that each component works individually. Start with the sound sensor component before proceeding to the LED and LCD display.
 
@@ -172,7 +176,7 @@ Plug in your Arduino to your powersource when the components are completed! A wo
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 ## :small_orange_diamond: Assembling the Encasement
-The Fusion 360 and gcode files for the top, bottom, and top + bottom parts of the encasement are available in `Final Physical Prototype Files`. The encasement is too large to print both the top and bottom at the same time on the Prusa i3, but this may be possible for machines with larger beds. 
+The Fusion 360 and gcode files for the top, bottom, and top + bottom parts of the encasement are available in `Final Physical Prototype Files`. The encasement is too large to print both the top and bottom at the same time on the Prusa i3, but this may be possible for machines with larger beds. Printing the entire encasement takes about  6-7 hours. 
 
 <img width="400" alt="image" src="https://github.com/elinor-oren/tube-sensor/assets/127933946/20d7c9c4-c78a-4400-84ee-55c612d23065">
 
@@ -187,14 +191,26 @@ The initial test face was a scaled up version of a [Prusamaker Underground Keych
 <img width="400" alt="image" src="https://github.com/elinor-oren/tube-sensor/assets/127933946/0b376bbd-86fb-4b02-8ba1-cef8d55f136e">
 <img width="400" alt="image" src="https://github.com/elinor-oren/tube-sensor/assets/127933946/bf656c7d-037c-4cbe-9b35-22c394278e9d">
 
-The top face of the roundel slips over the bottom container, and the contain
+The top face of the roundel slips over the bottom container. 
 
-Be sure to print the encasement with white filament if you would like to paint the roundel in the classic underground colours; the nameplate is Ultramarine blue and the circle is two layers ofVermillion red over a base layer of Crimson red.
+<img width="400" alt="image" src="https://github.com/elinor-oren/tube-sensor/assets/127933946/b92c2914-c582-4371-80ed-b5fde1521ade">
+
+
+Be sure to print the encasement with white filament if you would like to paint the roundel in the classic underground colours; the nameplate is Ultramarine blue, the outer circle is two layers of Vermillion red over a base layer of Crimson red, the inner circle is white.
 
 <img width="400" alt="image" src="https://github.com/elinor-oren/tube-sensor/assets/127933946/6f173dac-ff10-4055-ab61-59337e2da3d8">
 
 > PLA doesn’t take well to paint, so be sure to print an extra face to experiment with varnishes. The paint on my Paddingtone chipped immediately after I finished.
 
+### Placing the Components 
+
+Once your Paddingtone is ready for assembly, tape your components in place starting with the Neopixel, the LCD display, and finally the Sound Level Meter. Then, slip the top piece over bottom - if there is some wiggle room, add a piece of double-sided tape to secure this fit.
+
+![image](https://github.com/elinor-oren/tube-sensor/assets/127933946/ec12f522-33a7-4c96-b823-9b9bff30e80d)
+
+Be sure to thread the thinner (USB B) end of USB cable through the hole of the encasement before plugging it into the Arduino.
+
+<img width="384" alt="image" src="https://github.com/elinor-oren/tube-sensor/assets/127933946/7bfdd35e-cb10-4571-a0b8-f3bada6a3429">
 
 
 ### Modifications 
@@ -205,5 +221,17 @@ If you would like to change the name of the device, be sure to account for this.
 
 ## :small_orange_diamond: Deploying The Paddingtone
 ### Data Visualization 
+
+<img width="400" alt="image" src="https://github.com/elinor-oren/tube-sensor/assets/127933946/48e1e403-b962-4541-b94d-a5e72962cb87">
+
+After taking in environmental noise, data is displayed via the following outputs.
+
 <img width="400" alt="device_function" src="https://github.com/elinor-oren/tube-sensor/assets/127933946/d5e33c2f-cd8e-40f3-9000-948f051e982b">
+
+The device is light enough to carry with you on your commute. 
+
+https://github.com/elinor-oren/tube-sensor/assets/127933946/0f459c9d-fea1-47e8-8aed-b2e4d2bb5345
+
+
+
 
