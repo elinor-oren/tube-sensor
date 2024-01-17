@@ -172,7 +172,11 @@ Plug in your Arduino to your powersource when the components are completed! A wo
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 ## :small_orange_diamond: Assembling the Encasement
-The encasement files are available in  `Final Physical Prototype Files`. 
+The Fusion 360 and gcode files for the top, bottom, and top + bottom parts of the encasement are available in `Final Physical Prototype Files`. The encasement is too large to print both the top and bottom at the same time on the Prusa i3, but this may be possible for machines with larger beds. 
+
+<img width="400" alt="image" src="https://github.com/elinor-oren/tube-sensor/assets/127933946/20d7c9c4-c78a-4400-84ee-55c612d23065">
+
+
 The device is designed so that the sound sensor's microphone has protected yet visually disreet access to the ambient environment through a hole in the "o." 
 
 <img width="400" alt="image" src="https://github.com/elinor-oren/tube-sensor/assets/127933946/95765174-3a6e-4fd1-a442-ebf8e5944d15">
