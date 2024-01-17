@@ -162,16 +162,17 @@ In the final code, the LCD displays the `noiseLevel` variable output from the LE
 
 
 ### Final Display
-A completely working "Paddingtone" should look like this.
+Plug in your Arduino to your powersource when the components are completed! A working "Paddingtone" will most likely be assembled in a quiet lab and will glow green like this:
 
-![IMG_3672](https://github.com/elinor-oren/tube-sensor/assets/127933946/5a70f176-59bc-41d9-9cdd-3a1d11cc0e39)
+<img width="337" alt="image" src="https://github.com/elinor-oren/tube-sensor/assets/127933946/35a5657b-54b4-461d-9dad-02f004cb560d">
+
 
 > [!NOTE] 
 > The LED brightness has been turned down to avoid glare when using the device in the underground. These images do not reflect that but the code does.
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 ## :small_orange_diamond: Assembling the Encasement
-The encasement files are available in this repo. 
+The encasement files are available in  `Final Physical Prototype Files`. 
 The device is designed so that the sound sensor's microphone has protected yet visually disreet access to the ambient environment through a hole in the "o." 
 
 <img width="400" alt="image" src="https://github.com/elinor-oren/tube-sensor/assets/127933946/95765174-3a6e-4fd1-a442-ebf8e5944d15">
@@ -181,6 +182,15 @@ The initial test face was a scaled up version of a [Prusamaker Underground Keych
 
 <img width="400" alt="image" src="https://github.com/elinor-oren/tube-sensor/assets/127933946/0b376bbd-86fb-4b02-8ba1-cef8d55f136e">
 <img width="400" alt="image" src="https://github.com/elinor-oren/tube-sensor/assets/127933946/bf656c7d-037c-4cbe-9b35-22c394278e9d">
+
+The top face of the roundel slips over the bottom container, and the contain
+
+Be sure to print the encasement with white filament if you would like to paint the roundel in the classic underground colours; the nameplate is Ultramarine blue and the circle is two layers ofVermillion red over a base layer of Crimson red.
+
+<img width="400" alt="image" src="https://github.com/elinor-oren/tube-sensor/assets/127933946/6f173dac-ff10-4055-ab61-59337e2da3d8">
+
+> PLA doesn’t take well to paint, so be sure to print an extra face to experiment with varnishes. The paint on my Paddingtone chipped immediately after I finished.
+
 
 
 ### Modifications 
